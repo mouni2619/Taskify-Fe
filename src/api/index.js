@@ -1,12 +1,6 @@
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
-//https://vexa-server.herokuapp.com/api
-//http://localhost:8800/api/
-//https://dull-blue-dolphin-tutu.cyclic.app
-//https://project-management-app-production-3d51.up.railway.app/api/
-//http://localhost:8700/api/
-//https://vexa.onrender.com/
-// https://pmab.onrender.com/api/
+
 const API = axios.create({ baseURL: `https://taskifybackend-owl9.onrender.com/api` }); 
 
 

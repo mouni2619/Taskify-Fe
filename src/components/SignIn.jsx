@@ -19,6 +19,7 @@ import { signIn, googleSignIn, findUserByEmail, resetPassword } from "../api/ind
 import OTP from "./OTP";
 import { useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
+import { ClassNames } from "@emotion/react";
 
 const Container = styled.div`
   width: 100%;
@@ -134,6 +135,14 @@ const Error = styled.div`
     `    display: none;
     `}
 `;
+const DemoCredentials = styled.div`
+  font-size: 13px;
+  text-align: left;
+  color: yellow;
+  margin-left:30px;
+  
+`;
+
 
 const ForgetPassword = styled.div`
   color: ${({ theme }) => theme.soft2};
@@ -442,7 +451,7 @@ const SignIn = ({ setSignInOpen, setSignUpOpen }) => {
                   <CircularProgress color="inherit" size={20} />
                 ) : (
                   <>
-                    <GoogleIcon src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1000px-Google_%22G%22_Logo.svg.png?20210618182606" />
+                    <GoogleIcon src="https://cdn-teams-slug.flaticon.com/google.jpg" />
                     Sign In with Google</>
                 )}
               </OutlinedBox>
@@ -516,7 +525,15 @@ const SignIn = ({ setSignInOpen, setSignUpOpen }) => {
               >
                 Create Account
               </Span>
+            
             </LoginText>
+            <DemoCredentials>
+             Demo Users:
+             <br/> 
+    mounikaadada234@gmail.com
+    <br />
+  Mouni@234
+  </DemoCredentials>
           </Wrapper>
         ) : (
           <Wrapper>
@@ -612,6 +629,8 @@ const SignIn = ({ setSignInOpen, setSignUpOpen }) => {
                         Create Account
                       </Span>
                     </LoginText>
+                   
+                   
                   </>
                 }
               </>
@@ -623,6 +642,7 @@ const SignIn = ({ setSignInOpen, setSignUpOpen }) => {
           </Wrapper>
 
         )}
+         
       </Container>
     </Modal>
   );
