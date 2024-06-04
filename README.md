@@ -1,3 +1,5 @@
+Taskify is a full-stack web application designed to enhance productivity by allowing users to efficiently manage their tasks and projects. Users can create, edit, and delete tasks, categorize them, and track their progress. Taskify supports user authentication through Google Auth and JWT, ensuring secure access. The application features a responsive user interface built with React JS, providing a seamless experience across all devices.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
